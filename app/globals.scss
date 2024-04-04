@@ -24,7 +24,73 @@ body {
   font-family: 'Montserrat';
   background: $primary-color;
 }
+
+img{
+  &::selection{
+    background-color: $dark-color;
+  }
+}
+
+br{
+  &::selection{
+    background-color: $dark-color;
+  }
+}
+
+b{
+  &::selection{
+    background-color: $dark-color;
+  }
+}
+
+p{
+  &::selection{
+    background-color: $dark-color;
+  }
+}
 /* First Section */
+
+.nav-bar{
+  position: absolute;
+  gap: 2rem;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 30px;
+  animation: BlurScaleIn 2s forwards;
+  .nav-item{
+    width: 170px;
+    transition: .2s ease-out;
+    cursor: pointer;
+    text-align: center;
+    color: $secondary-color;
+    &:hover{
+      font-weight: 700;
+    }
+  }
+  &.embeded{
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(0);
+    background-color: $secondary-color;
+    z-index: 2;
+    animation: MoveDownIn .3s forwards;
+    .nav-item{
+      color: $primary-color;
+    }
+  }
+  &.transition{
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(0);
+    background-color: $secondary-color;
+    z-index: 2;
+    animation: MoveUpOut .3s forwards;
+  }
+}
 
 .first-sec{
   height: fit-content;
@@ -72,7 +138,7 @@ body {
     font-size: 25px;
     &::selection{
       background-color: $dark-color;
-  }
+    }
   }
 }
 
@@ -82,6 +148,7 @@ body {
   width: 100%;
   display: flex;
   flex-direction: row;
+  overflow: hidden;
   .txt-warp{
     width: 37%;
     padding: 20px 100px;
@@ -92,9 +159,75 @@ body {
       font-weight:600;
       font-size: 61px;
       opacity: 0;
+      transition: .3s ease-out;
       &.active{
         opacity: 1;
       }
+      &::selection{
+        background-color: $primary-color;
+      }
+    }
+  }
+  .img-slider{
+    width: 63%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    .img-sli{
+      width: 15%;
+      overflow: hidden;
+      transition: .3s ease-out;
+      opacity: 0.5;
+      &.active{
+        width: 70%;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.fourth-sec{
+  width: 100%;
+  height: 650px;
+  position: relative;
+  .bg-texture{
+    position: absolute;
+    z-index: -1;
+  }
+  h1{
+    color: $secondary-color;
+    font-size: 60px;
+    font-weight: 600;
+    &::selection{
+      background-color: $dark-color;
+    }
+  }
+}
+
+.fifth-sec{
+  height: fit-content;
+  width: 100%;
+  .card{
+    height: 560px;
+    display: flex;
+    flex-direction: row;
+    .text-warp{
+      width: 45%;
+      height: 100%;
+      padding: 20px 20px 20px 100px;
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+      justify-content: center;
+      p{
+        font-size: 22px;
+        font-weight: 200;
+      }
+    }
+    .img-warp{
+      width: 55%;
+      height: 100%;
+      overflow: hidden;
     }
   }
 }
@@ -106,6 +239,23 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.secondary{
+  background-color: $secondary-color;
+  color: white;
+}
+
+.variant{
+  background-color: $variant-color;
+  color: white;
+}
+
+.dark{
+  background-color: $dark-color;
+  color: white;
+}
+
+
 
 /* Animations */
 
@@ -128,5 +278,16 @@ body {
   100%{
     filter: blur(0);
     transform: translateY(0);
+  }
+}
+
+@keyframes MoveUpOut {
+  0%{
+    filter: blur(15px);
+    transform: translateY(0);
+  }
+  100%{
+    filter: blur(0);
+    transform: translateY(-150px);
   }
 }
