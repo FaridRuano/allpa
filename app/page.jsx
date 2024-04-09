@@ -63,22 +63,34 @@ export default function Home() {
         </div>
         <div className="menu-items">
           <Image src={SmAllpaLogoWh} width={120} height={'auto'} alt="Allpa"/>
-          <div className="menu-item" onClick={()=>scrollToSection('more')}>
+          <div className="menu-item" onClick={()=>{
+            scrollToSection('more')
+            isMenu(false)
+            }}>
             <a>
             Conoce Más
             </a>
           </div>
-          <div className="menu-item" onClick={()=>scrollToSection('dossier')}>
+          <div className="menu-item" onClick={()=>{
+            scrollToSection('dossier')
+            isMenu(false)
+            }}>
             <a>
             Departamentos
             </a>
           </div>
-          <div className="menu-item" onClick={()=>scrollToSection('us')}>
+          <div className="menu-item" onClick={()=>{
+            scrollToSection('us')
+            isMenu(false)
+            }}>
             <a>
             Nosotros
             </a>
           </div>
-          <div className="menu-item" onClick={()=>scrollToSection('contact')}>
+          <div className="menu-item" onClick={()=>{
+            scrollToSection('contact')
+            isMenu(false)
+            }}>
             <a>
             Contáctanos
             </a>
