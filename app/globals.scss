@@ -357,10 +357,13 @@ a{
   align-items: center;
   .bg-texture{
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: -1;
     img{
-      width: 100%;
-      height: auto;
+      width: auto;
+      height: 550px;
     }
   }
   h1{
@@ -377,11 +380,21 @@ a{
     h1{
       font-size: 40px;
     }
+    .bg-texture{
+      img{
+        height: 280px;
+      }
+    }
   }
   @media (max-width: 600px) {
     height: 200px;
     h1{
-      font-size: 25px;
+      font-size: 23px;
+    }
+    .bg-texture{
+      img{
+        height: 200px;
+      }
     }
   }
 }
@@ -425,7 +438,7 @@ a{
         }
       }
       .img-warp{
-        height: 250px;
+        height: 240px;
         width: 100%;
         img{
           width: 100%;
