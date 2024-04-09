@@ -191,7 +191,7 @@ a{
 
 
 .first-sec{
-  height: fit-content;
+  height: 900px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -200,21 +200,21 @@ a{
   overflow: hidden;
   transition: .3s ease-out all;
   .logo-warp{
-    height: 500px;
+    height: 250px;
+    margin-top: 80px;
     display: flex;
     flex-direction: column;
     gap: 2rem;
     width: 100%;
-    padding-bottom: 100px;
     animation: BlurScaleIn 2s forwards;
   }
   .main-render{
     width: 100%;
-    height: auto;
+    height: fit-content;
     padding: 0;
     margin: 0;
     overflow: hidden;
-    height: 400px;
+    transition: .3s ease-out;
     img{
       width: 100%;
       height: auto;
@@ -222,10 +222,11 @@ a{
   }
     
   @media (max-width: 600px) {
+    height: fit-content;
     .logo-warp{
       gap: 0.8rem;
-      height: 300px;
-      padding-top: 100px;
+      height: 150px;
+      margin-top: 100px;
       padding-bottom: 0;
       img{
         width: 140px;
@@ -256,8 +257,11 @@ a{
       background-color: $dark-color;
     }
   }
+  @media (max-width:990px) {
+    padding: 100px 40px;
+  }
   @media (max-width: 600px) {
-    height: 400px;
+    height: 300px;
     .sm-logo{
       width: 80px;
       height: auto;
@@ -265,9 +269,6 @@ a{
     p{
       font-size: 16px;
     }
-  }
-  @media (max-width:990px) {
-    padding: 40px;
   }
 }
 
@@ -314,27 +315,41 @@ a{
     }
   }
   @media (max-width: 990px) {
-    height: 800px;
+    height: 570px;
     flex-direction: column;
     .txt-warp{
       position: relative;
       width: 100%;
-      height: 600px;
-      padding: 100px 40px;
+      height: 220px;
+      padding: 40px 40px;
       p{
         left: 40px;
-        top: 100px;
+        top: 40px;
+        font-size: 40px;
       }
     }
     .img-slider{
       width: 100%;
+      height: 350px;
+      .img-sli{
+        img{
+          height: 100%;
+          width: auto;
+        }
+      }
+    }
+  }
+  @media (max-width: 600px) {
+    height: 420px;
+    .img-slider{
+      height: 200px;
     }
   }
 }
 
 .fourth-sec{
   width: 100%;
-  height: 650px;
+  height: 550px;
   position: relative;
   overflow: hidden;
   display: flex;
@@ -343,6 +358,10 @@ a{
   .bg-texture{
     position: absolute;
     z-index: -1;
+    img{
+      width: 100%;
+      height: auto;
+    }
   }
   h1{
     color: $secondary-color;
@@ -352,28 +371,17 @@ a{
       background-color: $dark-color;
     }
   }
-  @media (max-width: 600px) {
-    height: 280px;
-    .bg-texture{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      img{
-        width: 150%;
-        height: auto;
-      }
-    }
-    h1{
-      font-size: 20px !important;
-    }
-  }
   @media (max-width: 990px) {
-    padding: 40px 100px;
+    height: 280px;
+    padding: 100px 40px;
     h1{
       font-size: 40px;
+    }
+  }
+  @media (max-width: 600px) {
+    height: 200px;
+    h1{
+      font-size: 25px;
     }
   }
 }
@@ -410,12 +418,19 @@ a{
       height: fit-content;
       .text-warp{
         width: 100%;
-        height: 600px;
+        height: 500px;
         padding: 100px 40px;
+        p{
+          font-size: 18px;
+        }
       }
       .img-warp{
-        height: 350px;
+        height: 250px;
         width: 100%;
+        img{
+          width: 100%;
+          height: auto;
+        }
       }
     }
   }
@@ -499,17 +514,6 @@ a{
       gap: 1rem;
     }
   }
-  @media (max-width:720px) {
-    .header-warp{
-      flex-direction: column;
-      gap: 1rem;
-      justify-content: flex-end;
-      h1{
-        text-align: end;
-        font-size: 40px;
-      }
-    }
-  }
   @media (max-width: 990px) {
     padding: 100px 40px;
     .header-warp{
@@ -527,7 +531,23 @@ a{
       }
     }
   }
-
+  @media (max-width:720px) {
+    .header-warp{
+      gap: 1rem;
+      margin-bottom: 50px;
+      h1{
+        font-size: 25px;
+      }
+      .price-warp{
+        h1{
+          font-size: 28px;
+        }
+        span{
+          font-size: 20px;
+        }
+      }
+    }
+  }
 }
 
 .seventh-sec{

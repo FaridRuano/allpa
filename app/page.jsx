@@ -3,6 +3,7 @@ import Image from "next/image"
 import AllpaLogo from "@public/assets/main-logo.png"
 import AllpaLogo2 from "@public/assets/main-logo2.png"
 import MainBg from "@public/images/main-bg.png"
+import MainBg2 from "@public/images/main-bg2.png"
 import SmAllpaLogo from "@public/assets/sm-logo-sec.png"
 import SmAllpaLogoWh from "@public/assets/sm-logo-wh.png"
 import RamaLogo from "@public/assets/rama-logo.png"
@@ -126,7 +127,7 @@ export default function Home() {
           </div>
         </div>
         <div className="main-render center">
-          <Image className="main-bg" src={MainBg} width={'auto'} height={810} alt="Allpa Render"/>
+          <Image className="main-bg" src={MainBg2} width={'auto'} height={1079} alt="Allpa Render"/>
         </div>
       </section>     
       <section className="second-sec" id='more'>
@@ -259,14 +260,11 @@ export default function Home() {
                 por un equipo de expertos comprometidos
                 con la excelencia. <b>Rama Estudio</b>, conocido
                 por su enfoque en la vivienda colectiva
-                sustentable, se ha aliado con <b>MAODA</b>, un equipo de
-                construcción de alto nivel, para llevar a cabo
-                este proyecto excepcional.
+                sustentable.
               </p>
             </div>
             <div className="logos-warp">
               <Image src={RamaLogo} width={'auto'} height={80} alt="Rama Studio"/>
-              <Image src={MaodaLogo} width={'auto'} height={80} alt="Maoda"/>
             </div>
             <div className="link-warp">
               <a className="center" href="https://ramaestudioec.com" target="_blank">
