@@ -293,7 +293,7 @@ export default function Home() {
               info@ramaestudioec.com
             </span>
             <span>
-              <a className="center" href="https://allpa-faridruano.vercel.app" target="_blank">
+              <a className="center" href="https://ramaestudioec.com" target="_blank">
                 <Globe/>www.ramastudioec.com
               </a>
             </span>
@@ -311,7 +311,7 @@ export default function Home() {
               Redes Sociales
             </h1>
             <span>
-              <a className="center" href="https://www.instagram.com/ramaestudioec/">
+              <a className="center" href="https://www.instagram.com/ramaestudioec/" target="_blank">
                 <Instagram/> @ramaestudioec
               </a>
             </span>
