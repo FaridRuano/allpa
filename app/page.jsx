@@ -20,7 +20,7 @@ import RamaImg from "@public/images/rama-img.png"
 import Dep1 from "@public/images/dep-1.png"
 import Dep2 from "@public/images/dep-2.png"
 import Dep3 from "@public/images/dep-3.png"
-import { Download, Globe, Instagram, Phone } from 'react-feather';
+import { Download, Globe, Instagram, Menu, Phone, X } from 'react-feather';
 import Script from 'next/script'
 
 
@@ -28,6 +28,8 @@ import { useEffect, useState } from "react"
 
 export default function Home() {
   const [activeSlide, setActiveSlide] = useState(0);
+
+  const [menu, isMenu] = useState(false)
 
   const handleSlideHover = (index) => {
     setActiveSlide(index)
@@ -52,6 +54,37 @@ export default function Home() {
 
   return (
     <main>
+      <div className={menu?"menu active":"menu"} >
+        <div className="center" onClick={()=>isMenu(true)}>
+          <Menu/> Menú
+        </div>
+        <div className="close" onClick={()=>isMenu(false)}>
+          <X className="icon"/>
+        </div>
+        <div className="menu-items">
+          <Image src={SmAllpaLogoWh} width={120} height={'auto'} alt="Allpa"/>
+          <div className="menu-item" onClick={()=>scrollToSection('more')}>
+            <a>
+            Conoce Más
+            </a>
+          </div>
+          <div className="menu-item" onClick={()=>scrollToSection('dossier')}>
+            <a>
+            Departamentos
+            </a>
+          </div>
+          <div className="menu-item" onClick={()=>scrollToSection('us')}>
+            <a>
+            Nosotros
+            </a>
+          </div>
+          <div className="menu-item" onClick={()=>scrollToSection('contact')}>
+            <a>
+            Contáctanos
+            </a>
+          </div>
+        </div>
+      </div>
       <Script src='/utils/scrollSection.js'/>
       <section className="first-sec">
         <div className="logo-warp center">
@@ -80,7 +113,7 @@ export default function Home() {
             </a>
           </div>
         </div>
-        <div className="main-render">
+        <div className="main-render center">
           <Image className="main-bg" src={MainBg} width={'auto'} height={810} alt="Allpa Render"/>
         </div>
       </section>     
@@ -112,7 +145,7 @@ export default function Home() {
       </section>
       <section className="fourth-sec center">
         <h1>Tu departamento diseñado <br/> como una casa.</h1>
-        <div className="bg-texture">
+        <div className="bg-texture center">
           <Image src={BgTexture} width={'auto'} height={500} alt='Textura Allpa'/>
         </div>
       </section>
@@ -128,7 +161,7 @@ export default function Home() {
             </p>
           </div>
           <div className="img-warp center">
-            <Image src={CardBg1} width={'auto'} height={560}/>
+            <Image src={CardBg1} width={'auto'} height={560} alt="Bg"/>
           </div>
         </div>
         <div className="card variant">
@@ -141,7 +174,7 @@ export default function Home() {
             </p>
           </div>
           <div className="img-warp center">
-            <Image src={CardBg2} width={'auto'} height={560}/>
+            <Image src={CardBg2} width={'auto'} height={560} alt='Bg'/>
           </div>
         </div>
         <div className="card dark">
