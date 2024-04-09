@@ -155,7 +155,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="fourth-sec center">
+      <section className="fourth-sec">
         <h1>Tu departamento diseñado <br/> como una casa.</h1>
         <div className="bg-texture center">
           <Image src={BgTexture} width={'auto'} height={500} alt='Textura Allpa'/>
