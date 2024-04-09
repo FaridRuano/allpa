@@ -257,7 +257,7 @@ a{
     }
   }
   @media (max-width: 600px) {
-    padding: 40px;
+    height: 400px;
     .sm-logo{
       width: 80px;
       height: auto;
@@ -265,6 +265,9 @@ a{
     p{
       font-size: 16px;
     }
+  }
+  @media (max-width:990px) {
+    padding: 40px;
   }
 }
 
@@ -310,7 +313,7 @@ a{
       }
     }
   }
-  @media (max-width: 600px) {
+  @media (max-width: 990px) {
     height: 800px;
     flex-direction: column;
     .txt-warp{
@@ -351,7 +354,6 @@ a{
   }
   @media (max-width: 600px) {
     height: 280px;
-    padding: 40px 100px;
     .bg-texture{
       display: flex;
       justify-content: center;
@@ -365,7 +367,13 @@ a{
       }
     }
     h1{
-      font-size: 20px;
+      font-size: 20px !important;
+    }
+  }
+  @media (max-width: 990px) {
+    padding: 40px 100px;
+    h1{
+      font-size: 40px;
     }
   }
 }
@@ -396,7 +404,7 @@ a{
       overflow: hidden;
     }
   }
-  @media (max-width: 600px) {
+  @media (max-width: 990px) {
     .card{
       flex-direction: column;
       height: fit-content;
@@ -415,7 +423,7 @@ a{
 
 .sixth-sec{
   width: 100%;
-  height: 1500px;
+  height: fit-content;
   padding: 100px;
   .header-warp{
     display: flex;
@@ -491,14 +499,21 @@ a{
       gap: 1rem;
     }
   }
-  @media (max-width: 600px) {
-    padding: 100px 40px;
+  @media (max-width:720px) {
     .header-warp{
       flex-direction: column;
       gap: 1rem;
       justify-content: flex-end;
       h1{
         text-align: end;
+        font-size: 40px;
+      }
+    }
+  }
+  @media (max-width: 990px) {
+    padding: 100px 40px;
+    .header-warp{
+      h1{
         font-size: 40px;
       }
     }
@@ -512,6 +527,7 @@ a{
       }
     }
   }
+
 }
 
 .seventh-sec{
@@ -573,7 +589,7 @@ a{
       }
     }
   }
-  @media (max-width:600px) {
+  @media (max-width:850px) {
     padding: 100px 40px;
     .content-warp{
       flex-direction: column;
@@ -606,7 +622,14 @@ a{
         }
       }
     }
-    
+  }
+  @media (max-width: 1250px) {
+    .logos-warp{
+      img{
+        height: 50px;
+        width: auto;
+      }
+    }
   }
 }
 
@@ -645,7 +668,7 @@ a{
       }
     }
   }
-  @media (max-width: 600px) {
+  @media (max-width: 750px) {
     padding: 100px 40px;
     .header-logos{
       img{
