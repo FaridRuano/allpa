@@ -2,14 +2,16 @@
 import Image from "next/image"
 import AllpaLogo from "@public/assets/main-logo.png"
 import AllpaLogo2 from "@public/assets/main-logo2.png"
-import MainBg from "@public/images/main-bg.png"
+import Icon1 from "@public/assets/icon-1.png"
+import Icon2 from "@public/assets/icon-2.png"
+import Icon3 from "@public/assets/icon-3.png"
+import Icon4 from "@public/assets/icon-4.png"
 import MainBg2 from "@public/images/main-bg2.png"
 import SmAllpaLogo from "@public/assets/sm-logo-sec.png"
 import SmAllpaLogoWh from "@public/assets/sm-logo-wh.png"
 import RamaLogo from "@public/assets/rama-logo.png"
 import RamaDark from "@public/assets/rama-logo-dark.png"
 import LightLogo from "@public/assets/light-logo.png"
-import MaodaLogo from "@public/assets/maoda-logo.png"
 import Slider1 from "@public/images/slider-1.png"
 import Slider2 from "@public/images/slider-2.png"
 import Slider3 from "@public/images/slider-3.png"
@@ -21,7 +23,7 @@ import RamaImg from "@public/images/rama-img.png"
 import Dep1 from "@public/images/dep-1.png"
 import Dep2 from "@public/images/dep-2.png"
 import Dep3 from "@public/images/dep-3.png"
-import { Download, Globe, Instagram, Menu, Phone, X } from 'react-feather';
+import { Download, Eye, Globe, Instagram, Menu, Phone, X } from 'react-feather';
 import Script from 'next/script'
 
 
@@ -69,7 +71,10 @@ export default function Home() {
             isMenu(false)
             }}>
             <a>
-            Conoce Más
+              <div className="icon-container">
+                <Image src={Icon1} width={'auto'} height={30} alt="Icon 1"/>
+              </div>
+              Conoce Más
             </a>
           </div>
           <div className="menu-item" onClick={()=>{
@@ -77,7 +82,10 @@ export default function Home() {
             isMenu(false)
             }}>
             <a>
-            Departamentos
+              <div className="icon-container">
+                <Image src={Icon2} width={'auto'} height={30} alt="Icon 2"/>
+              </div>
+              Departamentos
             </a>
           </div>
           <div className="menu-item" onClick={()=>{
@@ -85,7 +93,10 @@ export default function Home() {
             isMenu(false)
             }}>
             <a>
-            Nosotros
+              <div className="icon-container">
+                <Image src={Icon3} width={'auto'} height={30} alt="Icon 3"/>
+              </div>
+              Nosotros
             </a>
           </div>
           <div className="menu-item" onClick={()=>{
@@ -93,7 +104,10 @@ export default function Home() {
             isMenu(false)
             }}>
             <a>
-            Contáctanos
+              <div className="icon-container">
+                <Image src={Icon4} width={'auto'} height={30} alt="Icon 4"/>
+              </div>
+              Contáctanos
             </a>
           </div>
         </div>
@@ -146,12 +160,21 @@ export default function Home() {
         </div>
         <div className="img-slider">
           <div className={`img-sli center ${activeSlide === 0 ? 'active' : ''}`} onMouseEnter={() => handleSlideHover(0)}>
+            <div className="icon-click">
+              Ver
+            </div>
             <Image src={Slider1} width={720} height={'auto'} alt="Render Allpa"/>
           </div>
           <div className={`img-sli center ${activeSlide === 1 ? 'active' : ''}`} onMouseEnter={() => handleSlideHover(1)}>
+            <div className="icon-click">
+              Ver
+            </div>
             <Image src={Slider2} width={720} height={'auto'} alt="Render Allpa"/>
           </div>
           <div className={`img-sli center ${activeSlide === 2 ? 'active' : ''}`} onMouseEnter={() => handleSlideHover(2)}>
+            <div className="icon-click">
+              Ver
+            </div>
             <Image src={Slider3} width={720} height={'auto'} alt="Render Allpa"/>
           </div>
         </div>
@@ -215,6 +238,95 @@ export default function Home() {
           <div className="price-warp">
             <span>desde</span>
             <h1>$93.690</h1>
+          </div>
+        </div>
+        <div className="info-deps">
+          <div className="tit-info">
+            <span>
+              Conoce todos los departamentos de <b>Allpa.</b>
+            </span>
+          </div>
+          <div className="deps-link">
+            <div className="deps-col">
+              <a href="/docs/Allpa-DEP1.pdf" target='_blank'>
+                Departamento #1
+              </a>
+              <a href="/docs/Allpa-DEP3.pdf" target='_blank'>
+                Departamento #3
+              </a>
+              <a href="/docs/Allpa-DEP5.pdf" target='_blank'>
+                Departamento #5
+              </a>
+              <a href="/docs/Allpa-DEP7.pdf" target='_blank'>
+                Departamento #7
+              </a>
+              <a href="/docs/Allpa-DEP9.pdf" target='_blank'>
+                Departamento #9
+              </a>
+              <a href="/docs/Allpa-DEP11.pdf" target='_blank'>
+                Departamento #11
+              </a>
+              <a href="/docs/Allpa-DEP13.pdf" target='_blank'>
+                Departamento #13
+              </a>
+              <a href="/docs/Allpa-DEP15.pdf" target='_blank'>
+                Departamento #15
+              </a>
+              <a href="/docs/Allpa-DEP17.pdf" target='_blank'>
+                Departamento #17
+              </a>
+            </div>
+            <div className="deps-col">
+              <a href="/docs/Allpa-DEP2.pdf" target='_blank'>
+                Departamento #2
+              </a>
+              <a href="/docs/Allpa-DEP4.pdf" target='_blank'>
+                Departamento #4
+              </a>
+              <a href="/docs/Allpa-DEP6.pdf" target='_blank'>
+                Departamento #6
+              </a>
+              <a href="/docs/Allpa-DEP8.pdf" target='_blank'>
+                Departamento #8
+              </a>
+              <a href="/docs/Allpa-DEP10.pdf" target='_blank'>
+                Departamento #10
+              </a>
+              <a href="/docs/Allpa-DEP12.pdf" target='_blank'>
+                Departamento #12
+              </a>
+              <a href="/docs/Allpa-DEP14.pdf" target='_blank'>
+                Departamento #14
+              </a>
+              <a href="/docs/Allpa-DEP16.pdf" target='_blank'>
+                Departamento #16
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="info-deps">
+          <div className="tit-info">
+            <span>
+              Conoce cada piso de <b>Allpa.</b>
+            </span>
+          </div>
+          <div className="deps-link">
+            <div className="deps-col">
+              <a href="/docs/Allpa-PISO2.pdf" target='_blank'>
+                Piso #2
+              </a>
+              <a href="/docs/Allpa-PISO4.pdf" target='_blank'>
+                Piso #4
+              </a>
+            </div>
+            <div className="deps-col">
+              <a href="/docs/Allpa-PISO3.pdf" target='_blank'>
+                Piso #3
+              </a>
+              <a href="/docs/Allpa-PISO5.pdf" target='_blank'>
+                Piso #5
+              </a>
+            </div>
           </div>
         </div>
         <div className="body-warp">
