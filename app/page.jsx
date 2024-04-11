@@ -25,7 +25,27 @@ import Dep2 from "@public/images/dep-2.png"
 import Dep3 from "@public/images/dep-3.png"
 import { Download, Eye, Globe, Instagram, Menu, Phone, X } from 'react-feather';
 import Script from 'next/script'
-
+import Piso2 from "@public/docs/1x/PISO2.jpg"
+import Piso3 from "@public/docs/1x/PISO3.jpg"
+import Piso4 from "@public/docs/1x/PISO4.jpg"
+import Piso5 from "@public/docs/1x/PISO5.jpg"
+import Depa1 from "@public/docs/1x/DEP1.jpg"
+import Depa2 from "@public/docs/1x/DEP2.jpg"
+import Depa3 from "@public/docs/1x/DEP3.jpg"
+import Depa4 from "@public/docs/1x/DEP4.jpg"
+import Depa5 from "@public/docs/1x/DEP5.jpg"
+import Depa6 from "@public/docs/1x/DEP6.jpg"
+import Depa7 from "@public/docs/1x/DEP7.jpg"
+import Depa8 from "@public/docs/1x/DEP8.jpg"
+import Depa9 from "@public/docs/1x/DEP9.jpg"
+import Depa10 from "@public/docs/1x/DEP10.jpg"
+import Depa11 from "@public/docs/1x/DEP11.jpg"
+import Depa12 from "@public/docs/1x/DEP12.jpg"
+import Depa13 from "@public/docs/1x/DEP13.jpg"
+import Depa14 from "@public/docs/1x/DEP14.jpg"
+import Depa15 from "@public/docs/1x/DEP15.jpg"
+import Depa16 from "@public/docs/1x/DEP16.jpg"
+import Depa17 from "@public/docs/1x/DEP17.jpg"
 
 import { useEffect, useState } from "react"
 
@@ -249,59 +269,74 @@ export default function Home() {
           <div className="deps-link">
             <div className="deps-col">
               <a href="/docs/Allpa-DEP1.pdf" target='_blank'>
-                Departamento #1
+                <Image src={Depa1} width={200} height={"auto"} alt="Dep 1"/>
+                <span>Departamento #1</span>
+              </a>
+              <a href="/docs/Allpa-DEP2.pdf" target='_blank'>
+                <Image src={Depa2} width={200} height={"auto"} alt="Dep 2"/>
+                <span>Departamento #2</span>
               </a>
               <a href="/docs/Allpa-DEP3.pdf" target='_blank'>
-                Departamento #3
-              </a>
-              <a href="/docs/Allpa-DEP5.pdf" target='_blank'>
-                Departamento #5
-              </a>
-              <a href="/docs/Allpa-DEP7.pdf" target='_blank'>
-                Departamento #7
-              </a>
-              <a href="/docs/Allpa-DEP9.pdf" target='_blank'>
-                Departamento #9
-              </a>
-              <a href="/docs/Allpa-DEP11.pdf" target='_blank'>
-                Departamento #11
-              </a>
-              <a href="/docs/Allpa-DEP13.pdf" target='_blank'>
-                Departamento #13
-              </a>
-              <a href="/docs/Allpa-DEP15.pdf" target='_blank'>
-                Departamento #15
-              </a>
-              <a href="/docs/Allpa-DEP17.pdf" target='_blank'>
-                Departamento #17
-              </a>
-            </div>
-            <div className="deps-col">
-              <a href="/docs/Allpa-DEP2.pdf" target='_blank'>
-                Departamento #2
+                <Image src={Depa3} width={200} height={"auto"} alt="Dep 3"/>
+                <span>Departamento #3</span>
               </a>
               <a href="/docs/Allpa-DEP4.pdf" target='_blank'>
-                Departamento #4
+                <Image src={Depa4} width={200} height={"auto"} alt="Dep 4"/>
+                <span>Departamento #4</span>
+              </a>
+              <a href="/docs/Allpa-DEP5.pdf" target='_blank'>
+                <Image src={Depa5} width={200} height={"auto"} alt="Dep 5"/>
+                <span>Departamento #5</span>
               </a>
               <a href="/docs/Allpa-DEP6.pdf" target='_blank'>
-                Departamento #6
+                <Image src={Depa6} width={200} height={"auto"} alt="Dep 6"/>
+                <span>Departamento #6</span>
+              </a>
+              <a href="/docs/Allpa-DEP7.pdf" target='_blank'>
+                <Image src={Depa7} width={200} height={"auto"} alt="Dep 7"/>
+                <span>Departamento #7</span>
               </a>
               <a href="/docs/Allpa-DEP8.pdf" target='_blank'>
-                Departamento #8
+                <Image src={Depa8} width={200} height={"auto"} alt="Dep 8"/>
+                <span>Departamento #8</span>
+              </a>
+              <a href="/docs/Allpa-DEP9.pdf" target='_blank'>
+                <Image src={Depa9} width={200} height={"auto"} alt="Dep 9"/>
+                <span>Departamento #9</span>
               </a>
               <a href="/docs/Allpa-DEP10.pdf" target='_blank'>
-                Departamento #10
+                <Image src={Depa10} width={200} height={"auto"} alt="Dep 10"/>
+                <span>Departamento #10</span>
+              </a>
+              <a href="/docs/Allpa-DEP11.pdf" target='_blank'>
+                <Image src={Depa11} width={200} height={"auto"} alt="Dep 11"/>
+                <span>Departamento #11</span>
               </a>
               <a href="/docs/Allpa-DEP12.pdf" target='_blank'>
-                Departamento #12
+                <Image src={Depa12} width={200} height={"auto"} alt="Dep 12"/>
+                <span>Departamento #12</span>
+              </a>
+              <a href="/docs/Allpa-DEP13.pdf" target='_blank'>
+                <Image src={Depa13} width={200} height={"auto"} alt="Dep 13"/>
+                <span>Departamento #13</span>
               </a>
               <a href="/docs/Allpa-DEP14.pdf" target='_blank'>
-                Departamento #14
+                <Image src={Depa14} width={200} height={"auto"} alt="Dep 14"/>
+                <span>Departamento #14</span>
+              </a>
+              <a href="/docs/Allpa-DEP15.pdf" target='_blank'>
+                <Image src={Depa15} width={200} height={"auto"} alt="Dep 15"/>
+                <span>Departamento #15</span>
               </a>
               <a href="/docs/Allpa-DEP16.pdf" target='_blank'>
-                Departamento #16
+                <Image src={Depa16} width={200} height={"auto"} alt="Dep 16"/>
+                <span>Departamento #16</span>
               </a>
-            </div>
+              <a href="/docs/Allpa-DEP17.pdf" target='_blank'>
+                <Image src={Depa17} width={200} height={"auto"} alt="Dep 17"/>
+                <span>Departamento #17</span>
+              </a>
+            </div>        
           </div>
         </div>
         <div className="info-deps">
@@ -313,20 +348,22 @@ export default function Home() {
           <div className="deps-link">
             <div className="deps-col">
               <a href="/docs/Allpa-PISO2.pdf" target='_blank'>
-                Piso #2
+                <Image src={Piso2} width={200} height={"auto"} alt="Piso 2"/>
+                <span>Piso #2</span>
               </a>
               <a href="/docs/Allpa-PISO4.pdf" target='_blank'>
-                Piso #4
+                <Image src={Piso4} width={200} height={"auto"} alt="Piso 4"/>
+                <span>Piso #4</span>
               </a>
-            </div>
-            <div className="deps-col">
               <a href="/docs/Allpa-PISO3.pdf" target='_blank'>
-                Piso #3
+                <Image src={Piso3} width={200} height={"auto"} alt="Piso 3"/>
+                <span>Piso #3</span>
               </a>
               <a href="/docs/Allpa-PISO5.pdf" target='_blank'>
-                Piso #5
+                <Image src={Piso5} width={200} height={"auto"} alt="Piso 5"/>
+                <span>Piso #5</span>
               </a>
-            </div>
+            </div>        
           </div>
         </div>
         <div className="body-warp">
