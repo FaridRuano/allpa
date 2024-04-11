@@ -460,11 +460,11 @@ a{
         padding: 40px 40px;
         justify-content: flex-start;
         p{
-          font-size: 18px;
+          font-size: 15px
         }
       }
       .img-warp{
-        height: 240px;
+        height: fit-content;
         width: 100%;
         img{
           width: 100%;
@@ -638,11 +638,11 @@ a{
       gap: 1rem;
       margin-bottom: 50px;
       h1{
-        font-size: 25px;
+        font-size: 20px;
       }
       .price-warp{
         h1{
-          font-size: 28px;
+          font-size: 24px;
         }
         span{
           font-size: 20px;

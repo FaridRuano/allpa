@@ -263,6 +263,33 @@ export default function Home() {
         <div className="info-deps">
           <div className="tit-info">
             <span>
+              Conoce cada piso de <b>Allpa.</b>
+            </span>
+          </div>
+          <div className="deps-link">
+            <div className="deps-col">
+              <a href="/docs/Allpa-PISO2.pdf" target='_blank'>
+                <Image src={Piso2} width={200} height={"auto"} alt="Piso 2"/>
+                <span>Piso #2</span>
+              </a>
+              <a href="/docs/Allpa-PISO4.pdf" target='_blank'>
+                <Image src={Piso4} width={200} height={"auto"} alt="Piso 4"/>
+                <span>Piso #4</span>
+              </a>
+              <a href="/docs/Allpa-PISO3.pdf" target='_blank'>
+                <Image src={Piso3} width={200} height={"auto"} alt="Piso 3"/>
+                <span>Piso #3</span>
+              </a>
+              <a href="/docs/Allpa-PISO5.pdf" target='_blank'>
+                <Image src={Piso5} width={200} height={"auto"} alt="Piso 5"/>
+                <span>Piso #5</span>
+              </a>
+            </div>        
+          </div>
+        </div>
+        <div className="info-deps">
+          <div className="tit-info">
+            <span>
               Conoce todos los departamentos de <b>Allpa.</b>
             </span>
           </div>
@@ -339,33 +366,7 @@ export default function Home() {
             </div>        
           </div>
         </div>
-        <div className="info-deps">
-          <div className="tit-info">
-            <span>
-              Conoce cada piso de <b>Allpa.</b>
-            </span>
-          </div>
-          <div className="deps-link">
-            <div className="deps-col">
-              <a href="/docs/Allpa-PISO2.pdf" target='_blank'>
-                <Image src={Piso2} width={200} height={"auto"} alt="Piso 2"/>
-                <span>Piso #2</span>
-              </a>
-              <a href="/docs/Allpa-PISO4.pdf" target='_blank'>
-                <Image src={Piso4} width={200} height={"auto"} alt="Piso 4"/>
-                <span>Piso #4</span>
-              </a>
-              <a href="/docs/Allpa-PISO3.pdf" target='_blank'>
-                <Image src={Piso3} width={200} height={"auto"} alt="Piso 3"/>
-                <span>Piso #3</span>
-              </a>
-              <a href="/docs/Allpa-PISO5.pdf" target='_blank'>
-                <Image src={Piso5} width={200} height={"auto"} alt="Piso 5"/>
-                <span>Piso #5</span>
-              </a>
-            </div>        
-          </div>
-        </div>
+        
         <div className="body-warp">
           <div className="img center">
             <span>
