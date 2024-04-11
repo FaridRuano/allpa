@@ -529,6 +529,7 @@ a{
           position: relative;
           height: 180px;
           width: 200px;
+          overflow: hidden;
           span{
             transition: .3s ease-out;
           }
