@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
           <meta property="og:title" content="Allpa" />
           <meta property="og:description" content="habitar.compartir" />
-          <meta property="og:image" content={MainBg2} />
+          <meta property="og:image" content="/images/preview.jpg" />
           <meta property="og:url" content="allpahabitar.com" />
           <meta property="og:type" content="website" />
           <title>Título de tu página</title>
