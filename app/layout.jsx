@@ -1,5 +1,5 @@
 import "./globals.scss";
-import MainBg2 from "@public/images/main-bg2.png"
+import MainBg2 from "@public/images/preview.jpg"
 
 
 export const metadata = {
