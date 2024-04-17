@@ -7,6 +7,8 @@ import Icon2 from "@public/assets/icon-2.png"
 import Icon3 from "@public/assets/icon-3.png"
 import Icon4 from "@public/assets/icon-4.png"
 import MainBg2 from "@public/images/main-bg2.png"
+import MainBg3 from "@public/images/main-bg3.png"
+import MainBg4 from "@public/images/main-bg4.png"
 import SmAllpaLogo from "@public/assets/sm-logo-sec.png"
 import SmAllpaLogoWh from "@public/assets/sm-logo-wh.png"
 import RamaLogo from "@public/assets/rama-logo.png"
@@ -23,7 +25,7 @@ import RamaImg from "@public/images/rama-img.png"
 import Dep1 from "@public/images/dep-1.png"
 import Dep2 from "@public/images/dep-2.png"
 import Dep3 from "@public/images/dep-3.png"
-import { Download, Eye, Globe, Instagram, Menu, Phone, X } from 'react-feather';
+import { ArrowDownLeft, ArrowDownRight, ArrowLeft, ArrowRight, Download, Eye, Globe, Instagram, Menu, Phone, X } from 'react-feather';
 import Script from 'next/script'
 import Piso2 from "@public/docs/1x/PISO2.jpg"
 import Piso3 from "@public/docs/1x/PISO3.jpg"
@@ -72,7 +74,43 @@ export default function Home() {
         navBar.classList.remove("embeded")
       }
     })
+
+    const sliderContainer = document.querySelector('.slidy-container');
+    const slides = document.querySelectorAll('.slidy');
+    const totalSlides = slides.length;
+    let currentSlide = 0;
+
+    function goToSlide(slideIndex) {
+      if (slideIndex < 0) {
+        currentSlide = totalSlides -1;
+      }
+      else if(slideIndex >= totalSlides){
+        currentSlide = 0
+      }
+      else {
+        currentSlide = slideIndex;
+      }
+      const offset = -currentSlide * 100;
+      sliderContainer.style.transform = `translateX(${offset}%)`;
+    }
+
+    document.getElementById('right').addEventListener('click', () => {
+      goToSlide(currentSlide + 1);
+    });
+    
+    document.getElementById('left').addEventListener('click', () => {
+      goToSlide(currentSlide - 1);
+    })
+
+    function starAutoplay(){
+      goToSlide(currentSlide+1)
+    }
+
+    const intervalId = setInterval(starAutoplay, 3000)
+
+    intervalId
   })
+  
   
 
   return (
@@ -160,8 +198,20 @@ export default function Home() {
             </a>
           </div>
         </div>
-        <div className="main-render center">
-          <Image className="main-bg" src={MainBg2} width={'auto'} height={1079} alt="Allpa Render"/>
+        <div className="main-render">
+          <div className="slider-nav rigth" id="right">
+            <ArrowRight/>
+          </div>
+          <div className="slider-nav left" id="left">
+            <ArrowLeft/>
+          </div>
+          <div className="main-slider center">
+            <div className="slidy-container">
+              <Image className="slidy" id="slidy-1" src={MainBg2} width={'auto'} height={1079} alt="Allpa Render"/>
+              <Image className="slidy" id="slidy-2" src={MainBg3} width={'auto'} height={1079} alt="Allpa Render"/>
+              <Image className="slidy" id="slidy-3" src={MainBg4} width={'auto'} height={1079} alt="Allpa Render"/>
+            </div>
+          </div>
         </div>
       </section>     
       <section className="second-sec" id='more'>
